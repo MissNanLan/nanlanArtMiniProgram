@@ -1,0 +1,81 @@
+/* essay.wxss */
+
+.essayWrpper-title {
+  border-left: 4px solid #5ddcdc;
+  margin: 1rem 0;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 14px;
+}
+
+.essayWrpper-content_items {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  padding: 0 1rem;
+  border-top: 1rpx solid #d9d9d9;
+  padding-bottom: 0.5rem;
+}
+
+.leftContent {
+  display: grid;
+  grid-template-rows: 0.8fr 1.2fr;
+  padding-top: 0.5rem;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border-radius: 15px;
+  background-color: #ccc;
+}
+
+.username {
+  height: 30px;
+  vertical-align: middle;
+  padding-left: 6px;
+}
+
+.essayTitle {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 0;
+}
+
+.essayDetail {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /*这个数字是设置要显示省略号的行数*/
+  -webkit-box-orient: vertical;
+  line-height: 1rem;
+  color: #999;
+  font-size: 12px;
+}
+
+.rightImg {
+  padding-top: 0.5rem;
+}
+
+.rightImg image {
+  margin: 6px;
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+}
+
+.bottomText {
+  color: #999;
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.bottomText .icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.essayBottom {
+  margin-bottom: 0.5rem;
+}

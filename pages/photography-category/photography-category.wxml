@@ -1,0 +1,17 @@
+<!--photography-category.wxml-->
+<view class="photography-category">
+  <view class="photography-category_title">
+    <image src="{{i.avatar}}" class="avatar"> </image>
+    <text class="username">{{i.username}}南蓝</text>
+  </view>
+  <view class="photography-category_content">
+    <image></image>
+    <view class="descipition">
+      <text>作品名称</text>
+
+      <text class="iconfont icon-iconfontxihuan" style="font-size:14px;">点赞 </text>
+      <text class="iconfont icon-yanjing"> 点击数: {{i.footprint}}</text>
+
+    </view>
+  </view>
+</view>

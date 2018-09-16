@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/photography/photography",
+    "pages/essay/essay",
+    "pages/my/my",
+    "pages/essay-detail/essay-detail",
+    "pages/essay-category/essay-category",
+    "components/bottom-text/bottom-text",
+    "pages/photography-detail/photography-detail",
+    "pages/photography-category/photography-category"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#5DDCDC",
+    "navigationBarTitleText": "南蓝文艺",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-w.png"
+      },
+      {
+        "pagePath": "pages/photography/photography",
+        "text": "摄影",
+        "iconPath": "images/photography.png",
+        "selectedIconPath": "images/photography-w.png"
+      },
+      {
+        "pagePath": "pages/essay/essay",
+        "text": "随笔",
+        "iconPath": "images/article.png",
+        "selectedIconPath": "images/article-w.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-w.png"
+      }
+    ],
+    "backgroundColor": "#5DDCDC",
+    "selectedColor": "#ffffff",
+    "color": "#A0B2AE",
+    "borderStyle": "white"
+  }
+}

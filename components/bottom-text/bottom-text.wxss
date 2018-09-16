@@ -1,0 +1,12 @@
+/* bottom-text.wxss */
+.bottomText {
+  color: #999;
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+
+.bottomText .icon {
+  display: inline-block;
+  margin-right: 0.5rem;
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,16 @@
+<!--photography.wxml-->
+<view class="photography">
+  <view class="photographyWrpper" wx:for="{{photographyArray}}" wx:key="*this" wx:for-item="item">
+    <view class="photographyWrpper-title"  catchtap="viewMorePhotograph" data-currentId="{{i.categoryId}}">{{item.categoryName}}</view>
+    <view class="photographyWrpper-content">
+      <view wx:for="{{item.result}}" wx:key="*this" wx:for-item="i" class="photographyWrpper-content_items" 
+        catchtap='viewMorePhotograph' data-currentId="{{i.id}}">
+        <image class="photographyWrpper-content_image"></image>
+        <text class="photographyWrpper-content_text">{{i.imgName}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="bottomText">
+     <text class="bottomText-split"></text> 别扯了,我是有底线的 <text class="bottomText-split"></text>
+  </view>
+</view>

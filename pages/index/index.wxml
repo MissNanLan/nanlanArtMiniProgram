@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="index--search">
+    <input maxlength="10" placeholder="最大输入长度10" />
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="#fff" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{item}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="index--hotPhotography">
+    <view class="index--hotPhotography_title"> 热门摄影</view>
+    <view class="index--hotPhotography_content" wx:for="{{photographyArray}}" wx:key="*this" wx:for-item="{{img}}">
+      <view>
+        <image src="{{img.imgSrc}}" class="hostPhotographImage"></image>
+        <view class="label">{{img.categoryName}}</view>
+      </view>
+      <view>
+        <image src="{{item.imgSrc}}" class="hostPhotographImage"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="index--hotArticle">
+    <view class="index--hotArticle_title">热门随笔</view>
+
+    <view class="index--hotArticle_content" wx:for="{{essayArray}}" wx:key="*this" wx:for-item="item">
+      <view wx:for="{{item.result}}" wx:key="*this" wx:for-item="i" class="hotArticleContext">
+
+        <view class="leftImg">
+          <image src="{{i.thumbnail}}"> </image>
+        </view>
+
+        <view class="rightContent">
+          <text class="essayDetail">{{i.essayDetail}}</text>
+          <view class="bottomText">
+            <text class="icon">
+             <text class="iconfont icon-iconfontxihuan" style="font-size:14px;"></text> 点赞数: {{i.favorite}}
+            </text>
+            <text class="icon">
+             <text class="iconfont icon-yanjing"></text> 点击数: {{i.footprint}}
+            </text>
+          </view>
+        </view>
+
+      </view>
+
+
+
+
+    </view>
+  </view>
+</view>

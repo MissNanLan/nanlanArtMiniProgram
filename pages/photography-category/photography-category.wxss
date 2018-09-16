@@ -1,0 +1,5 @@
+/* photography-category.wxss */
+.photography-category_content{
+  display:grid;
+  background-color: #fff;
+}

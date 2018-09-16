@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "南蓝文艺",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "南蓝",
+    "文艺",
+    "摄影",
+    "美图",
+    "随笔",
+    "文章",
+    "散文"
+  ],
+  "author": "南蓝",
+  "license": "ISC",
+  "dependencies": {
+    "mockjs": "^1.0.1-beta3"
+  }
+}

@@ -1,0 +1,28 @@
+<!--essay-category.wxml-->
+<view class="essayCategory-content" wx:for="{{essayArray}}" wx:key="*this" wx:for-item="item">
+  <view wx:for="{{item.result}}" wx:key="*this" wx:for-item="i" class="essayCategory-content_items">
+    <view class="leftContent">
+      <view>
+        <image src="{{i.avatar}}" class="avatar"> </image>
+        <text class="username">{{i.username}}</text>
+      </view>
+      <text class="essayTitle">{{i.essayTitle}}</text>
+      <text class="essayDetail" catchtap="viewEssayDetail" data-currentId="{{i.id}}">{{i.essayDetail}}</text>
+    </view>
+    <view class="rightImg">
+      <image src="{{i.thumbnail}}"> </image>
+    </view>
+    <view class="bottomText">
+      <text class="icon">
+             <text class="iconfont icon-iconfontxihuan" style="font-size:14px;"></text> 点赞数: {{i.favorite}}
+      </text>
+      <text class="icon">
+             <text class="iconfont icon-yanjing"></text> 点击数: {{i.footprint}}
+      </text>
+    </view>
+  </view>
+</view>
+<view class="bottomText">
+  <text class="bottomText-split"></text> 别扯了,我是有底线的
+  <text class="bottomText-split"></text>
+</view>

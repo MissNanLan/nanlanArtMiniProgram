@@ -1,0 +1,5 @@
+<!--bottom-text.wxml-->
+  <view class="bottomText">
+    <text class="bottomText-split"></text> 别扯了,我是有底线的
+    <text class="bottomText-split"></text>
+  </view>

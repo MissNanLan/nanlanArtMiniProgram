@@ -1,0 +1,18 @@
+<!--essay-detail.wxml-->
+<view class="essay-detail" wx:for="{{essayArray}}" wx:key="*this" wx:for-item="item" wx:if="{{index<1}}">
+  <!-- <view class="essay-detail_title">{{item.categoryName}}</view> -->
+  <view wx:for="{{item.result}}" wx:key="*this" wx:for-item="i" wx:if="{{index<1}}" class="essay-detail_content">
+    <view class="essay-detail_title">{{i.essayTitle}}</view>
+    <view class="essay-detail_user">
+      <image class="avatar" src="{{i.avatar}}"></image>
+      <text class="username">{{i.username}}</text>
+    </view>
+    <view class="essay-detail_numbers">阅读数 {{i.footprint}}</view>
+    <view class="essay-detail_detail">{{i.essayDetail}}</view>
+    <view>{{i.description}}</view>
+  </view>
+  <view class="bottomBtn">
+    <text class="iconfont icon-iconfontxihuan" style="font-size:14px;">点赞 </text>
+    <text class="iconfont icon-yanjing" style="font-size:14px;">分享 </text> 
+  </view>
+</view>

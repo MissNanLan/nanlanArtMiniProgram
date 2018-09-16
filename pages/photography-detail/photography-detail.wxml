@@ -1,0 +1,20 @@
+<!--photography-detail.wxml-->
+<view class="photography-detail">
+  <view class="photography-detail_title">
+    <image src="{{i.avatar}}" class="avatar"> </image>
+    <text class="username">{{i.username}}南蓝</text>
+  </view>
+  <view class="photography-detail_subTitle">
+    <text></text>
+    <text class="iconfont icon-yanjing"></text> 点击数: {{i.footprint}}
+  </view>
+  <view class="photography-detail_content">
+    <image src="../../../images/01.jpg"></image>
+    <image src="../../../images/02.jpg"></image>
+    <image src="../../../images/03.jpg"></image>
+  </view>
+  <view class="bottomBtn">
+    <text class="iconfont icon-iconfontxihuan" style="font-size:14px;">点赞 </text>
+    <text class="iconfont icon-yanjing" style="font-size:14px;">分享 </text>
+  </view>
+</view>
