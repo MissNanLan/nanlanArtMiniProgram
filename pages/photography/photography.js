@@ -14,12 +14,6 @@ Page({
     })
   },
   onLoad: function () {
-    var that = this;
-    API.ajax('', function (res) {
-      that.setData({
-        photographyArray: res.photographyData
-      })
-    })
-    console.log(this.data.photographyArray)
+
   }
 })

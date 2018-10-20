@@ -8,13 +8,13 @@ Page({
   },
 
   onLoad: function (option) {
-    var that = this;
-    API.ajax('', function (res) {
-      that.setData({
-        essayArray: res.essayData
-      })
-    })
-    console.log(this.data.essayArray);
+    // var that = this;
+    // API.ajax('', function (res) {
+    //   that.setData({
+    //     essayArray: res.essayData
+    //   })
+    // })
+    // console.log(this.data.essayArray);
 
   },
 

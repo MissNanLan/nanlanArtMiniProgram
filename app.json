@@ -9,7 +9,8 @@
     "pages/essay-category/essay-category",
     "components/bottom-text/bottom-text",
     "pages/photography-detail/photography-detail",
-    "pages/photography-category/photography-category"
+    "pages/photography-category/photography-category",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",

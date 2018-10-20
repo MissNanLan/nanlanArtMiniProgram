@@ -1,8 +1,9 @@
 //index.js
 //获取应用实例
-var API = require('../../utils/api.js')
-Page({
+let API = require('../../utils/api.js');
+const app = getApp();
 
+Page({
   data: {
     photographyArray: [],
     essayArray: [],
@@ -14,7 +15,9 @@ Page({
     indicatorDots: true, //指示点
     autoplay: true,   // 自动切换
     interval: 1000, //  自动切换间隔
-    duration: 1000 //   滑动时长
+    duration: 1000,//   滑动时长,
+    userInfo: {},
+    hasUserInfo: false
   },
   // 指示点
   changeIndicatorDots: function (e) {
@@ -41,12 +44,9 @@ Page({
     })
   },
   onLoad: function () {
-    var that = this;
-    API.ajax('', function (res) {
-      that.setData({
-        photographyArray: res.photographyData,
-        essayArray: res.essayData
-      })
+    wx.navigateTo({
+      url: '/pages/login/login',
     })
   }
+
 })

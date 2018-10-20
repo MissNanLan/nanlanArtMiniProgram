@@ -10,11 +10,11 @@ Page({
 
   onLoad: function () {
     var that = this;
-    API.ajax('', function (res) {
-      that.setData({
-        essayArray: res.essayData
-      })
-    })
+    // API.ajax('', function (res) {
+    //   that.setData({
+    //     essayArray: res.essayData
+    //   })
+    // })
   },
   // 跳转到详细页面
   viewEssayDetail: function (event) {

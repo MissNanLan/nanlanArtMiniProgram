@@ -1,14 +1,21 @@
 <!--my.wxml-->
 <view class="personal">
   <view class="personal--header">
-    <image src="" class="avatar"> </image>
-
-    <text class="username">{{i.username}}</text>
+    <block wx:if="{{!hasUserInfo && canIUse}}">
+      <image src="" class="avatar"> </image>
+      <text class="username">未登录</text>
+    </block>
+    <block wx:else>
+      <image src="{{userInfo.avatarUrl}}" class="avatar"> </image>
+      <text class="username">{{userInfo.nickName}}</text>
+    </block>
+    </view>
+    <view class="personal--content">
+      <view class="personal--content_items">
+        <text class="iconfont icon-iconfontxihuan" style="font-size:14px;"></text> 最近阅读记录
+        </view>
+      <view class="personal--content_items">
+        <text class="iconfont icon-yanjing"></text> 我喜欢的
+      </view>
+    </view>
   </view>
-  <view class="personal--content">
-    <view class="personal--content_items">
-      <text class="iconfont icon-iconfontxihuan" style="font-size:14px;"></text> 最近阅读记录</view>
-    <view class="personal--content_items">
-      <text class="iconfont icon-yanjing"></text> 我喜欢的</view>
-  </view>
-</view>
