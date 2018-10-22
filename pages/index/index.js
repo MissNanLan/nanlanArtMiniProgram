@@ -42,11 +42,6 @@ Page({
     this.setData({
       duration: e.detail.value
     })
-  },
-  onLoad: function () {
-    wx.navigateTo({
-      url: '/pages/login/login',
-    })
   }
 
 })

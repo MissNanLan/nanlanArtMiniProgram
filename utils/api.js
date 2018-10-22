@@ -1,21 +1,34 @@
 let config = require('./config.js');
+import { promisifys, toPromisify } from '../promisfy/promisfy.js'
 let DEBUG = false; //切换数据入口
 //var Mock = require('../miniprogram_npm/mockjs/index.js')
 
 
 
 export function apiRequest(url ,params, callBack, method, header) {
-  if (!DEBUG) {
-    wx.request({
+  if (!DEBUG) { 
+    promisifys.request({ // api Promise化
       url: config.BATH_PATH + url, // 请求的地址
       method: method ? method : 'post', // 请求的方法
       data: params, // 请求的参数
       header: header ? header : { // 设置请求的header
         "Content-Type": "application/json"
-      },
-      success: callBack
+      }
+    }).then((res)=>{
+        
+    }).cacth((err) =>{
+
+    })
+    // wx.request({
+    //   // url: config.BATH_PATH + url, // 请求的地址
+    //   // method: method ? method : 'post', // 请求的方法
+    //   // data: params, // 请求的参数
+    //   // header: header ? header : { // 设置请求的header
+    //   //   "Content-Type": "application/json"
+    //   },
+    //   success: callBack
       
-    });
+    // });
   }
 }
 //  else {
